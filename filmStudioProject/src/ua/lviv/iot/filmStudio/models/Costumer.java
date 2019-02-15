@@ -12,15 +12,6 @@ public class Costumer extends Worker {
 		this.styleClothes = styleClothes;
 	}
 
-	public Costumer(String firstName, String lastName, String profession, boolean deegre, int workExperience,
-			int createdDocumentalFilms, int wishSalary) {
-		this(firstName, lastName, profession, deegre, workExperience, createdDocumentalFilms, wishSalary, null, null);
-	}
-
-	public Costumer() {
-		this(null, null, null, false, 0, 0, 0, null, null);
-	}
-
 	public Clothes getTypeClothes() {
 		return typeClothes;
 	}

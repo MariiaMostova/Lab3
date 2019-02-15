@@ -21,10 +21,6 @@ public class Worker {
 		this.profession = profession;
 	}
 
-	public Worker() {
-		this(null, null, null, false, 0, 0, 0);
-	}
-
 	public String getFirstName() {
 		return firstName;
 	}

@@ -10,15 +10,6 @@ public class Operator extends Worker {
 		this.ownCamera = ownCamera;
 	}
 
-	public Operator(String firstName, String lastName, String profession, boolean deegre, int workExperience,
-			int createdDocumentalFilms, int wishSalary) {
-		this(firstName, lastName, profession, deegre, workExperience, createdDocumentalFilms, wishSalary, false);
-	}
-
-	public Operator() {
-		this(null, null, null, false, 0, 0, 0, false);
-	}
-
 	public boolean isOwnCamera() {
 		return ownCamera;
 	}

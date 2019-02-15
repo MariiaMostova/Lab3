@@ -14,10 +14,6 @@ public class FilmStudioManager {
 		this.workers = workers;
 	}
 
-	public FilmStudioManager() {
-		this(null);
-	}
-
 	public List<Worker> sortByExperienceIncrease(List<Worker> workers) {
 		Comparator<Worker> experienceComparator = (Worker worker1, Worker worker2) -> worker1.getWorkExperience()
 				- worker2.getWorkExperience();
