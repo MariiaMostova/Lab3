@@ -10,15 +10,6 @@ public class Actor extends Worker {
 		this.role = role;
 	}
 
-	public Actor(String firstName, String lastName, String profession, boolean deegre, int workExperience,
-			int createdDocumentalFilms, int wishSalary) {
-		this(firstName, lastName, profession, deegre, workExperience, createdDocumentalFilms, wishSalary, null);
-	}
-
-	public Actor() {
-		this(null, null, null, false, 0, 0, 0, null);
-	}
-
 	public Roles getRole() {
 		return role;
 	}
