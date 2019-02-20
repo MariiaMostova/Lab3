@@ -1,0 +1,13 @@
+main\java\ua\lviv\iot\filmstudio\models\Operator.class
+main\java\ua\lviv\iot\filmstudio\models\Style.class
+main\java\ua\lviv\iot\filmstudio\models\Clothes.class
+main\java\ua\lviv\iot\filmstudio\models\Actor.class
+main\java\ua\lviv\iot\filmstudio\models\Roles.class
+main\java\ua\lviv\iot\filmstudio\models\Worker.class
+main\java\ua\lviv\iot\filmstudio\managers\FilmStudioManager.class
+main\java\ua\lviv\iot\filmstudio\models\Costumer.class
+main\java\ua\lviv\iot\App.class
+main\java\ua\lviv\iot\filmstudio\models\Main.class
+main\java\ua\lviv\iot\filmstudio\models\Director.class
+main\java\ua\lviv\iot\filmstudio\models\Scenario.class
+main\java\ua\lviv\iot\filmstudio\models\Decorator.class
