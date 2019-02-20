@@ -7,7 +7,7 @@ import main.java.ua.lviv.iot.filmstudio.managers.FilmStudioManager;
 
 public class Main {
 
-  public static void main(final String[] args) {
+  public static void main(String[] args) {
 
     List<Worker> documentalFilmCasting = new ArrayList<Worker>();
     final FilmStudioManager mainManager = new FilmStudioManager(documentalFilmCasting);
@@ -54,7 +54,6 @@ public class Main {
           + documentalFilmCasting.get(i).getProfession()  + " " 
           + documentalFilmCasting.get(i).getCreatedDocumentalFilms());
     }
-    System.out.println();
     
   }
   
