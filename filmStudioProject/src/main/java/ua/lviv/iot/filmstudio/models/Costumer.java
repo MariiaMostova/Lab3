@@ -1,4 +1,4 @@
-package main.java.ua.lviv.iot.filmstudio.models;
+package ua.lviv.iot.filmstudio.models;
 
 public class Costumer extends Worker {
 
