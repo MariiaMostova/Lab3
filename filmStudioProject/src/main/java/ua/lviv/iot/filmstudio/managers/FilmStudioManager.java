@@ -1,38 +1,33 @@
-package main.java.ua.lviv.iot.filmstudio.managers;
+package ua.lviv.iot.filmstudio.managers;
 
 import java.util.Collections;
-
 import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import main.java.ua.lviv.iot.filmstudio.models.Worker;
+import ua.lviv.iot.filmstudio.models.Worker;
 
 public class FilmStudioManager {
 
   private List<Worker> workers;
 
-  public FilmStudioManager(final List<Worker> workers) {
-    this.workers = workers;
-  }
-
-  public List<Worker> sortByExperienceIncrease(final List<Worker> workers) {
+  public List<Worker> sortByExperienceDecrease(List<Worker> workers) {
     Collections.sort(workers, Comparator.comparing(Worker::getWorkExperience).reversed());
     return workers;
   }
 
-  public List<Worker> sortByExperienceDecrease(final List<Worker> workers) {
+  public List<Worker> sortByExperienceIncrease(List<Worker> workers) {
     Collections.sort(workers, Comparator.comparing(Worker::getWorkExperience));
     return workers;
   }
 
-  public List<Worker> sortBySalaryIncrease(final List<Worker> workers) {
+  public List<Worker> sortBySalaryDecrease(List<Worker> workers) {
     Collections.sort(workers, Comparator.comparing(Worker::getWishSalary).reversed());
     return workers;
   }
 
-  public List<Worker> sortBySalaryDecrease(final List<Worker> workers) {
-    Collections.sort(workers, Comparator.comparing(Worker::getWorkExperience));
+  public List<Worker> sortBySalaryIncrease(List<Worker> workers) {
+    Collections.sort(workers, Comparator.comparing(Worker::getWishSalary));
     return workers;
   }
 
