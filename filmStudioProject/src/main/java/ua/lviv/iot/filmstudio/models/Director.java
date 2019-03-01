@@ -11,7 +11,15 @@ public class Director extends Worker {
             wishSalary);
     this.writtenScenario = writtenScenario;
   }
+  
+  public String getHeaders() {
+    return super.getHeaders() + ", written scenario";
+  }
 
+  public String toCSV() {
+    return super.toCSV() + ", " + writtenScenario;   
+  }
+  
   public Scenario getWrittenScenario() {
     return writtenScenario;
   }

@@ -11,6 +11,14 @@ public class Operator extends Worker {
           wishSalary);
     this.ownCamera = ownCamera;
   }
+  
+  public String getHeaders() {
+    return super.getHeaders() + ", " + "own camera";
+  }
+  
+  public String toCSV() {
+    return super.toCSV() + ", " + ownCamera;   
+  }
 
   public boolean isOwnCamera() {
     return ownCamera;
