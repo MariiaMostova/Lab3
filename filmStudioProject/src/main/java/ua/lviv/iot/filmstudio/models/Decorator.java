@@ -13,6 +13,14 @@ public class Decorator extends Worker {
     this.makingLandscape = makingLandscape;
     this.makingRoom = makingRoom;
   }
+  
+  public String getHeaders() {
+    return super.getHeaders() + ", making landscape, making room";
+  }
+  
+  public String toCSV() {
+    return super.toCSV() + ", " + makingLandscape + ", " + makingRoom;   
+  }
 
   public boolean isMakingLandscape() {
     return makingLandscape;

@@ -11,7 +11,15 @@ public class Actor extends Worker {
             wishSalary);
     this.role = role;
   }
-
+  
+  public String getHeaders() {
+    return super.getHeaders() + ", role";
+  }
+  
+  public String toCSV() {
+    return super.toCSV() + ", " + role;   
+  }
+  
   public Roles getRole() {
     return role;
   }

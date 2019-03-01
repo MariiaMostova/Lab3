@@ -14,6 +14,14 @@ public class Costumer extends Worker {
     this.styleClothes = styleClothes;
   }
 
+  public String getHeaders() {
+    return super.getHeaders() + ", type of clothes, style of clothes";
+  }
+  
+  public String toCSV() {
+    return super.toCSV() + ", " + typeClothes + ", " + styleClothes;   
+  }
+  
   public Clothes getTypeClothes() {
     return typeClothes;
   }
