@@ -1,7 +1,16 @@
 package ua.lviv.iot.filmstudio.models;
 
-public class Worker {
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
+@Entity
+public class Worker {
+    
+  @Id
+  @GeneratedValue(strategy = GenerationType.AUTO)
+  private Integer id;
   private String firstName;
   private String lastName;
   private String profession;
@@ -10,6 +19,10 @@ public class Worker {
   private int createdDocumentalFilms;
   private int wishSalary;
 
+  public Worker() {
+      
+  }
+  
   public Worker(final String firstName, final String lastName, final String profession, 
           final boolean deegre, final int workExperience, final int createdDocumentalFilms,
           final int wishSalary) {
@@ -32,7 +45,22 @@ public class Worker {
        + workExperience  + ", "  + createdDocumentalFilms + ", " + wishSalary;   
   }
   
-  public String getFirstName() {
+  @Override
+  public String toString() {
+      return "Worker [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", profession=" + profession
+              + ", deegre=" + deegre + ", workExperience=" + workExperience + ", createdDocumentalFilms="
+              + createdDocumentalFilms + ", wishSalary=" + wishSalary + "]";
+  }
+  
+  public Integer getId() {
+    return id;
+}
+
+public void setId(Integer id) {
+    this.id = id;
+}
+
+public String getFirstName() {
     return firstName;
   }
 
