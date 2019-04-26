@@ -35,10 +35,10 @@ public class Worker {
     this.profession = profession;
   }
 
-  public String getHeaders() {
-    return "First name, last name, profession, deegre, work experience, created documental films, "
-            + "wish salary";
-  }
+ // public String getHeaders() {
+   // return "First name, last name, profession, deegre, work experience, created documental films, "
+   //         + "wish salary";
+  //}
   
   public String toCSV() {
     return firstName  + ", " + lastName + ", " + profession + ", " + deegre  + ", " 
